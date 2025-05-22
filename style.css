@@ -1,0 +1,223 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    margin: 20px;
+}
+
+.hero__foto {
+    margin-top: 60px;
+}
+
+/* nastavenie textu */
+
+.hero__titulek {
+    font-weight: 600; /* Medium */
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.hero__titulek::after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background-color: #407BFF;
+	margin: 10px auto;
+}
+
+.submenu__titulek {
+    font-weight: 600; /* Medium */
+    font-size: 16px;
+}
+
+.hero__text {
+    font-weight: 400; /* Light */
+    font-size: 16px;
+    color: #8B8B8B;
+}
+
+.submenu__text {
+    margin-bottom: 30px;
+    color: #8B8B8B;
+}
+
+/* tlacitka */
+
+.button {
+    display: block;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    width: fit-content;
+}
+
+.button__hlavny {
+    background-color: #407BFF;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.button__vedlejsi {
+    background-color: #8B8B8B;
+    margin-bottom: 60px;
+}
+
+.submenu__offer {
+    display: flex;
+    padding-top: 30px;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 15px;
+    align-items: center;
+    box-shadow: 0px 4px 6px #407BFF1F;
+    border-radius: 10px;
+}
+
+.submenu__pictogram {
+    margin-right: 20px;
+}
+
+.submenu__title {
+    font-size: 13px;
+    color: #8B8B8B;
+}
+
+.submenu__titulek {
+    margin-top: 60px;
+}
+
+@media (min-width: 640px) {
+
+    /* tlacitka */
+
+    .hero__buttony {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  
+    .button {
+      margin: 0;
+    }
+  
+    .submenu__blok {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-grow: 0;
+        flex-shrink: 1;
+        margin-top: 40px;
+    }
+
+    .submenu__offer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        width: calc(33.33% - 20px);
+        height: 170px;
+    }
+
+    .submenu__pictogram {
+        margin: 0;
+        margin-top: 20px;
+    }
+    
+    .submenu__title {
+        margin-top: 20px;
+        margin: 15px;
+        margin-bottom: 20px;
+    }
+
+  }
+
+@media (min-width: 1100px) {
+
+    .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        flex-direction: row-reverse;
+      }
+
+    .hero__uvod {
+        margin-top: 0;
+        text-align: left;
+    } 
+
+    .hero__buttony {
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }    
+    
+    .hero__foto,
+    .hero__uvod {
+        flex: 1 1 0;
+        max-width: 490px;
+    }
+
+    .hero__titulek::after {
+        margin: 10px 0;
+    }
+
+    .submenu__one {
+        display: flex;
+        margin-top: 80px;
+        align-items: center;
+        gap: 60px;
+        flex-direction: row-reverse;
+        justify-content: center;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .submenu__blok {
+        max-width: 550px;
+        margin: 0;
+    }
+
+    .submenu__cast { 
+        max-width: 430px;
+        margin: 0 auto; 
+        text-align: left;
+    }
+
+    .submenu__two {
+        display: flex;
+        margin-top: 80px;
+        align-items: center;
+        gap: 60px;
+        max-width: 1040px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .submenu__title {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .submenu__titulek {
+        margin: 0;
+    }
+
+    .submenu__text {
+        margin-bottom: 0;
+    }
+}
